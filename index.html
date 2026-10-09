@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniPack - Balo sinh viên</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #243451;
+  background: #f6f8ff;
+  line-height: 1.7;
+}
+header {
+  background: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo { font-size: 26px; font-weight: bold; color: #3159d9; }
+nav a { margin: 8px; text-decoration: none; color: #243451; }
+.hero {
+  padding: 65px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: linear-gradient(120deg, #e3ebff, white);
+}
+.hero div { flex: 1; min-width: 260px; }
+h1 { font-size: 48px; line-height: 1.2; }
+h2 { font-size: 30px; }
+p { color: #59677d; }
+.bag {
+  font-size: 120px;
+  text-align: center;
+  background: #d7e3ff;
+  border-radius: 28px;
+  padding: 25px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 9px;
+  color: white;
+  background: #3159d9;
+  text-decoration: none;
+}
+section { padding: 48px 8%; }
+.center { text-align: center; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 5px 20px #20304a12;
+}
+.icon { font-size: 42px; }
+.price { color: #3159d9; font-weight: bold; }
+.contact { background: #e7edff; text-align: center; }
+footer {
+  background: #17264a;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+@media(max-width:600px) {
+  .hero { padding: 40px 6%; }
+  h1 { font-size: 36px; }
+  section { padding: 35px 6%; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🎒 UniPack</div>
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#products">Sản phẩm</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p>Ý TƯỞNG KHỞI NGHIỆP DÀNH CHO SINH VIÊN</p>
+    <h1>UniPack<br>Balo cho hành trình đại học</h1>
+    <p>UniPack hướng đến những chiếc balo tiện dụng, trẻ trung và phù hợp với nhu cầu học tập hằng ngày của sinh viên.</p>
+    <a class="btn" href="#products">Khám phá sản phẩm</a>
+  </div>
+  <div class="bag">🎒</div>
+</section>
+
+<section id="about">
+  <div class="center">
+    <h2>Về dự án UniPack</h2>
+    <p>Dự án hướng đến giải pháp balo phục vụ học tập và cuộc sống năng động của sinh viên.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Giá hợp lý</h3>
+      <p>Định hướng mức giá phù hợp với ngân sách sinh viên.</p>
+    </div>
+    <div class="card">
+      <div class="icon">💻</div>
+      <h3>Tiện dụng</h3>
+      <p>Hướng đến nhu cầu mang laptop, sách vở và đồ dùng học tập.</p>
+    </div>
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>Phong cách trẻ</h3>
+      <p>Thiết kế hướng đến sự năng động và hiện đại.</p>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="center">
+    <h2>Sản phẩm dự kiến</h2>
+    <p>Khám phá các dòng balo định hướng của UniPack.</p>
+  </div>
+  <div class="cards">
+    <div class="card center">
+      <div class="icon">🎒</div>
+      <h3>UniPack Basic</h3>
+      <p>Balo gọn nhẹ dùng hằng ngày.</p>
+      <p class="price">Giá dự kiến: 199.000đ</p>
+    </div>
+    <div class="card center">
+      <div class="icon">💼</div>
+      <h3>UniPack Laptop</h3>
+      <p>Hướng đến nhu cầu mang laptop.</p>
+      <p class="price">Giá dự kiến: 299.000đ</p>
+    </div>
+    <div class="card center">
+      <div class="icon">🌟</div>
+      <h3>UniPack Style</h3>
+      <p>Phong cách trẻ trung, năng động.</p>
+      <p class="price">Giá dự kiến: 249.000đ</p>
+    </div>
+  </div>
+  <p class="center"><em>Lưu ý: Giá bán và mẫu sản phẩm là minh họa, cần cập nhật theo kế hoạch thực tế của nhóm.</em></p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Cùng UniPack bắt đầu hành trình mới!</h2>
+  <p>UniPack – Dự án khởi nghiệp balo dành cho sinh viên.</p>
+  <p>Nhóm thực hiện: Huỳnh Trần Diệu Linh và Nguyễn Ngọc Hiếu Kỳ</p>
+  <p>Email liên hệ: Cập nhật email của nhóm tại đây.</p>
+</section>
+</main>
+
+<footer>© 2026 UniPack | Dự án khởi nghiệp balo sinh viên</footer>
+</body>
+</html>
